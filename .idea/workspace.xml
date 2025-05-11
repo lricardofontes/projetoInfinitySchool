@@ -4,7 +4,35 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="c1696819-1334-430a-8cf0-1e04220d39cf" name="Changes" comment="" />
+    <list default="true" id="c1696819-1334-430a-8cf0-1e04220d39cf" name="Changes" comment="">
+      <change afterPath="$PROJECT_DIR$/backend/controllers/resource_controller.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/backend/models/resource.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/backend/models/role.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/backend/repository/resource_repository.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/backend/services/resource_service.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/backend/tests/test_resource_service.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/backend/utils/__init__.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/backend/utils/security.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/dataSources/bbbba377-ac8d-4014-9631-8d3b3e846528.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/dataSources/bbbba377-ac8d-4014-9631-8d3b3e846528.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/dataSources/bbbba377-ac8d-4014-9631-8d3b3e846528/storage_v2/_src_/database/bd_cbm_hub.J-7YHQ/schema/pg_catalog.0S1ZNQ.meta" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/dataSources/bbbba377-ac8d-4014-9631-8d3b3e846528/storage_v2/_src_/database/bd_cbm_hub.J-7YHQ/schema/pg_catalog.0S1ZNQ.meta" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/dataSources/bbbba377-ac8d-4014-9631-8d3b3e846528/storage_v2/_src_/database/bd_cbm_hub.J-7YHQ/schema/pg_catalog.0S1ZNQ.zip" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/dataSources/bbbba377-ac8d-4014-9631-8d3b3e846528/storage_v2/_src_/database/bd_cbm_hub.J-7YHQ/schema/pg_catalog.0S1ZNQ.zip" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/dataSources/bbbba377-ac8d-4014-9631-8d3b3e846528/storage_v2/_src_/database/industrias_wayne.Z25qqw/schema/information_schema.FNRwLQ.meta" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/dataSources/bbbba377-ac8d-4014-9631-8d3b3e846528/storage_v2/_src_/database/industrias_wayne.Z25qqw/schema/information_schema.FNRwLQ.meta" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/dataSources/bbbba377-ac8d-4014-9631-8d3b3e846528/storage_v2/_src_/database/industrias_wayne.Z25qqw/schema/pg_catalog.0S1ZNQ.meta" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/dataSources/bbbba377-ac8d-4014-9631-8d3b3e846528/storage_v2/_src_/database/industrias_wayne.Z25qqw/schema/pg_catalog.0S1ZNQ.meta" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/dataSources/bbbba377-ac8d-4014-9631-8d3b3e846528/storage_v2/_src_/database/industrias_wayne.Z25qqw/schema/public.abK9xQ.meta" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/dataSources/bbbba377-ac8d-4014-9631-8d3b3e846528/storage_v2/_src_/database/industrias_wayne.Z25qqw/schema/public.abK9xQ.meta" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/dataSources/bbbba377-ac8d-4014-9631-8d3b3e846528/storage_v2/_src_/database/industrias_wayne.Z25qqw/schema/wayne_db.dyagKQ.meta" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/dataSources/bbbba377-ac8d-4014-9631-8d3b3e846528/storage_v2/_src_/database/industrias_wayne.Z25qqw/schema/wayne_db.dyagKQ.meta" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/dataSources/bbbba377-ac8d-4014-9631-8d3b3e846528/storage_v2/_src_/database/postgres.edMnLQ/schema/information_schema.FNRwLQ.zip" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/backend/api_server.py" beforeDir="false" afterPath="$PROJECT_DIR$/backend/api_server.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/backend/controllers/user_controller.py" beforeDir="false" afterPath="$PROJECT_DIR$/backend/controllers/user_controller.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/backend/database.py" beforeDir="false" afterPath="$PROJECT_DIR$/backend/database.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/backend/models/user.py" beforeDir="false" afterPath="$PROJECT_DIR$/backend/models/user.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/backend/repository/user_repository.py" beforeDir="false" afterPath="$PROJECT_DIR$/backend/repository/user_repository.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/backend/services/user_service.py" beforeDir="false" afterPath="$PROJECT_DIR$/backend/services/user_service.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/backend/tests/test_user_service.py" beforeDir="false" afterPath="$PROJECT_DIR$/backend/tests/test_user_service.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/frontend/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/frontend/index.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/frontend/script.js" beforeDir="false" afterPath="$PROJECT_DIR$/frontend/script.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/frontend/style.css" beforeDir="false" afterPath="$PROJECT_DIR$/frontend/style.css" afterDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -13,9 +41,9 @@
   <component name="FileTemplateManagerImpl">
     <option name="RECENT_TEMPLATES">
       <list>
-        <option value="Python Script" />
         <option value="HTML File" />
         <option value="JavaScript File" />
+        <option value="Python Script" />
       </list>
     </option>
   </component>
@@ -33,37 +61,38 @@
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent"><![CDATA[{
-  "keyToString": {
-    "DefaultHtmlFileTemplate": "HTML File",
-    "ModuleVcsDetector.initialDetectionPerformed": "true",
-    "Python.main.executor": "Run",
-    "Python.test_user_service.executor": "Run",
-    "RunOnceActivity.ShowReadmeOnStart": "true",
-    "RunOnceActivity.git.unshallow": "true",
-    "git-widget-placeholder": "main",
-    "last_opened_file_path": "/home/lricardofontes/PycharmProjects/InfinitySchoolProject/backend/repository",
-    "node.js.detected.package.eslint": "true",
-    "node.js.detected.package.tslint": "true",
-    "node.js.selected.package.eslint": "(autodetect)",
-    "node.js.selected.package.tslint": "(autodetect)",
-    "nodejs_package_manager_path": "npm",
-    "settings.editor.selected.configurable": "project.propVCSSupport.DirectoryMappings",
-    "vue.rearranger.settings.migration": "true"
+  <component name="PropertiesComponent">{
+  &quot;keyToString&quot;: {
+    &quot;DefaultHtmlFileTemplate&quot;: &quot;HTML File&quot;,
+    &quot;ModuleVcsDetector.initialDetectionPerformed&quot;: &quot;true&quot;,
+    &quot;Python.main.executor&quot;: &quot;Run&quot;,
+    &quot;Python.test_user_service.executor&quot;: &quot;Run&quot;,
+    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.git.unshallow&quot;: &quot;true&quot;,
+    &quot;git-widget-placeholder&quot;: &quot;master&quot;,
+    &quot;last_opened_file_path&quot;: &quot;/home/lricardofontes/PycharmProjects/InfinitySchoolProject/backend/repository&quot;,
+    &quot;node.js.detected.package.eslint&quot;: &quot;true&quot;,
+    &quot;node.js.detected.package.tslint&quot;: &quot;true&quot;,
+    &quot;node.js.selected.package.eslint&quot;: &quot;(autodetect)&quot;,
+    &quot;node.js.selected.package.tslint&quot;: &quot;(autodetect)&quot;,
+    &quot;nodejs_package_manager_path&quot;: &quot;npm&quot;,
+    &quot;settings.editor.selected.configurable&quot;: &quot;ml.llm.LLMConfigurable&quot;,
+    &quot;vue.rearranger.settings.migration&quot;: &quot;true&quot;
   },
-  "keyToStringList": {
-    "DatabaseDriversLRU": [
-      "postgresql",
-      "mysql"
+  &quot;keyToStringList&quot;: {
+    &quot;DatabaseDriversLRU&quot;: [
+      &quot;postgresql&quot;,
+      &quot;mysql&quot;
     ]
   }
-}]]></component>
+}</component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
       <recent name="$PROJECT_DIR$/backend/repository" />
       <recent name="$PROJECT_DIR$/backend/services" />
     </key>
     <key name="MoveFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/backend/utils" />
       <recent name="$PROJECT_DIR$/backend/models" />
       <recent name="$PROJECT_DIR$/backend/controller" />
     </key>
@@ -87,6 +116,9 @@
       <workItem from="1746384965205" duration="12433000" />
       <workItem from="1746485031520" duration="54000" />
       <workItem from="1746485159473" duration="176000" />
+      <workItem from="1746485347843" duration="2485000" />
+      <workItem from="1746627874877" duration="3202000" />
+      <workItem from="1746900886791" duration="8087000" />
     </task>
     <servers />
   </component>

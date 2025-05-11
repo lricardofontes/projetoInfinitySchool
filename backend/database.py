@@ -1,54 +1,23 @@
+import os
 import psycopg2
-from psycopg2 import pool
+from psycopg2.extras import RealDictCursor
 
-# Configurações do Banco de Dados
-DB_CONFIG = {
-    'dbname': 'industrias_wayne',  # Nome do banco criado
-    'user': 'app_user',  # Nome do usuário
-    'password': 'root',  # Substitua por sua senha
-    'host': 'localhost',  # Host do banco
-    'port': 5432  # Porta padrão do PostgreSQL
-}
-
-# Inicialização do pool de conexões
-try:
-    # Criando um pool de conexões para gerenciar as conexões com o banco
-    connection_pool = psycopg2.pool.SimpleConnectionPool(
-        1,  # Número mínimo de conexões abertas
-        10,  # Número máximo de conexões abertas
-        **DB_CONFIG  # Passando as configurações
+def get_db_connection():
+    """
+    Retorna uma conexão psycopg2 usando variáveis de ambiente:
+    PGHOST, PGPORT, PGUSER, PGPASSWORD, PGDATABASE
+    """
+    conn = psycopg2.connect(
+        host     = os.getenv('PGHOST',    'localhost'),
+        port     = os.getenv('PGPORT',    5432),
+        user     = os.getenv('PGUSER',    'app_user'),
+        password = os.getenv('PGPASSWORD','root'),
+        database = os.getenv('PGDATABASE','industrias_wayne')
     )
+    return conn
 
-    if connection_pool:
-        print("Conexão com o banco de dados estabelecida com sucesso!")
-except Exception as error:
-    print(f"Erro ao conectar ao banco de dados: {error}")
-
-
-# Função para obter uma conexão
-def get_connection():
-    try:
-        conn = connection_pool.getconn()
-        if conn:
-            print("Conexão obtida do pool.")
-        return conn
-    except Exception as e:
-        print(f"Erro ao obter conexão: {e}")
-
-
-# Função para liberar conexão de volta ao pool
-def release_connection(conn):
-    try:
-        connection_pool.putconn(conn)
-        print("Conexão devolvida ao pool.")
-    except Exception as e:
-        print(f"Erro ao liberar conexão: {e}")
-
-
-# Função para fechar todas as conexões (utilizado ao encerrar o aplicativo)
-def close_all_connections():
-    try:
-        connection_pool.closeall()
-        print("Todas as conexões foram encerradas.")
-    except Exception as e:
-        print(f"Erro ao encerrar conexões: {e}")
+def get_dict_cursor(conn):
+    """
+    Cursor que retorna dicionários em vez de tuplas.
+    """
+    return conn.cursor(cursor_factory=RealDictCursor)

@@ -1,26 +1,22 @@
 from backend.services.user_service import UserService
 from backend.models.user import User
+import uuid
 
 # Instâncias globais para os testes
 service = UserService()
 
 
+
+
 def test_create_user():
-    """
-    Testa a criação de um novo usuário e verifica se retorna
-    o ID do usuário criado.
-    """
-    print("\n=== Teste: create_user ===")
-    username = "usuario_teste"
-    email = "teste@example.com"
+    # Gera um username único usando parte de um UUID
+    username = f"usuario_{uuid.uuid4().hex[:8]}"
+    email = f"{username}@example.com"
     password = "senha123"
 
     user_id = service.create_user(username, email, password)
-
-    if user_id:
-        print(f"Usuário criado com sucesso! ID: {user_id}")
-    else:
-        print(f"Falha na criação do usuário.")
+    assert isinstance(user_id, int)
+    assert user_id > 0
 
 
 def test_get_user():
@@ -66,6 +62,12 @@ def test_delete_user():
         print(f"Usuário {user_id} deletado com sucesso!")
     else:
         print(f"Falha ao deletar o usuário com ID {user_id}.")
+
+def teardown_function(func):
+    # apaga qualquer usuário com username 'usuario_teste' antes de cada teste
+    u = service.repo.get_by_username("usuario_teste")
+    if u:
+        service.delete_user(u.id)
 
 
 # --------- EXECUTAR TESTES --------- #
